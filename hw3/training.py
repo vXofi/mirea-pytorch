@@ -1,11 +1,10 @@
 import torch.optim as optim
 import torch.nn as nn
 
+net = model.Net()
 
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
-
-net = model.Net()
 
 for epoch in range(2):  # loop over the dataset multiple times
 
