@@ -5,6 +5,8 @@ import torch.nn as nn
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
 
+net = model.Net()
+
 for epoch in range(2):  # loop over the dataset multiple times
 
     running_loss = 0.0
