@@ -10,7 +10,6 @@ from torchmetrics.functional import accuracy
 from einops import rearrange, reduce, repeat
 from einops.layers.torch import Rearrange, Reduce
 
-from ViT.dataUpload import PATH_DATASETS, batch_size
 
 class PatchEmbedding(nn.Module):
     """ Image to Patch Embedding

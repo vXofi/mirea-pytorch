@@ -1,9 +1,11 @@
 import lightning as L
 import torch
 import wandb
-from ViT.dataUpload import ViTDataModule, batch_size
-from ViT.model import ViTLightning
 from pytorch_lightning.loggers import WandbLogger
+
+from dataUpload import batch_size, ViTDataModule
+from model import ViTLightning
+
 
 wandb_logger = WandbLogger(project='ViT')
 wandb_logger.experiment.config["batch_size"] = batch_size
